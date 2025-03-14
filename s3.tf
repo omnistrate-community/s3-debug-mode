@@ -4,7 +4,7 @@ provider "aws" {
 
 # Terraform to create an S3 bucket
 resource "aws_s3" "my_bucket" {
-  bucket = "{{ $sys.id }}-bucket"
+  bucket = "{{ $sys.id }}-debug-mode-bucket"
   acl    = "private"
 }
 
